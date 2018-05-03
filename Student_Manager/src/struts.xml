@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		
+		<!-- 进入注册页面 -->
+		<action name="getDept" class="org.action.getDeptAction">
+			<result name="success">/stuRegister.jsp</result>
+			<result name="input">/tecRegister.jsp</result>
+			<result name="error">/stuLogin.jsp</result>
+		</action>
+		
+		<!-- 学生 -->
+		<!-- 学生登录 -->
+		<action name="stuLogin" class="org.action.stuLoginAction">
+			<result name="success">/Student.jsp</result>
+			<result name="error">/stuLogin.jsp</result>
+		</action>
+		<!-- 学生注册 -->
+		<action name="stuRegister" class="org.action.stuRegisterAction">
+			<result name="success">/stuLogin.jsp</result>
+			<result name="error">/Success.jsp</result>
+		</action>
+		<!-- 进入查询界面 -->
+		<action name = "gotoChoose" class = "org.action.stuLoginAction" method = "gotoChoose">
+			<result name = "success">/Student.jsp</result>
+			<result name = "error">/Student.jsp</result>
+		</action>
+		<!-- 查询开课信息 -->
+		<action name = "findOClass" class = "org.action.stuLoginAction" method = "findOClass">
+			<result name = "success">/Student.jsp</result>
+			<result name = "error">/Student.jsp</result>
+		</action>
+		<!-- 选课 -->
+		<action name = "attendClass" class = "org.action.stuLoginAction" method = "attendClass">
+			<result name = "success" >/Student.jsp</result>
+			<result name = "error">/Student.jsp</result>		
+		</action>
+		<!-- 退课 -->
+		<action name = "dropClass" class = "org.action.stuLoginAction" method = "dropClass">
+			<result name = "success">/Student.jsp</result>
+			<result name = "error">/Student.jsp</result>		
+		</action>
+		<!-- 展示选修课程 -->
+		<action name = "showAClass" class = "org.action.stuLoginAction" method = "showAClass">
+			<result name = "success">/Student.jsp</result>	
+			<result name = "error">/Student.jsp</result>		
+		</action>
+		<!-- 显示课表 -->
+		<action name = "showSchedule" class = "org.action.stuLoginAction" method = "showSchedule">
+			<result name = "success">/Student.jsp</result>	
+			<result name = "error">/Student.jsp</result>		
+		</action>
+		<!-- 显示成绩 -->
+		<action name = "showMyScore" class = "org.action.stuLoginAction" method = "showMyScore">
+			<result name = "success">/Student.jsp</result>	
+			<result name = "error">/Student.jsp</result>		
+		</action>
+		<!-- 进入学生信息修改-->
+		<action name = "showSinfo" class = "org.action.stuLoginAction" method = "showSinfo">
+			<result name = "success">/Student.jsp</result>	
+			<result name = "error">/Student.jsp</result>		
+		</action>
+		<!-- 学生信息修改-->
+		<action name = "updateSinfo" class = "org.action.stuLoginAction" method = "updateSinfo">
+			<result name = "success">/Student.jsp</result>	
+			<result name = "input">/Student.jsp</result>	
+			<result name = "error">/Success.jsp</result>		
+		</action>
+		
+		
+		<!-- 教师 -->
+		<!-- 教师登录 -->
+		<action name="tecLogin" class="org.action.tecLoginAction">
+			<result name="success">/Teacher.jsp</result>
+			<result name="error">/tecLogin.jsp</result>
+		</action>
+		<!-- 教师注册 -->
+		<action name="tecRegister" class="org.action.tecRegisterAction">
+			<result name="success">/tecLogin.jsp</result>
+			<result name="error">/tecLogin.jsp</result>
+		</action>
+		<!-- 课程管理 -->
+		<action name="teachManager" class="org.action.tecLoginAction" method = "teachManager">
+			<result name="success">/Teacher.jsp</result>
+			<result name="error">/Teacher.jsp</result>
+		</action>
+		<!-- 显示选课学生 -->
+		<action name="showMystu" class="org.action.tecLoginAction" method="showMystu">
+		<result name="success">/Teacher.jsp</result>
+		<result name="error">/Teacher.jsp</result>
+		</action>
+		<!-- 进入打分环节 -->
+		<action name="gotoMark" class="org.action.tecLoginAction" method="gotoMark">
+		<result name="success">/Teacher.jsp</result>
+		<result name="error">/Teacher.jsp</result>
+		</action>
+		<!-- 打分 -->
+		<action name="Mark" class="org.action.tecLoginAction" method="Mark">
+		<result name="success">/Teacher.jsp</result>
+		<result name="error">/Teacher.jsp</result>
+		</action>
+		<!-- 进入教师信息修改-->
+		<action name = "showTinfo" class = "org.action.tecLoginAction" method = "showTinfo">
+			<result name = "success">/Teacher.jsp</result>	
+			<result name = "error">/Teacher.jsp</result>		
+		</action>
+		<!-- 教师信息修改-->
+		<action name = "updateTinfo" class = "org.action.tecLoginAction" method = "updateTinfo">
+			<result name = "success">/Teacher.jsp</result>	
+			<result name = "input">/Teacher.jsp</result>	
+			<result name = "error">/Teacher.jsp</result>		
+		</action>
+		
+		
+		<!-- 管理员 -->
+		<!-- 管理员登录 -->
+		<action name="adLogin" class="org.action.adLoginAction">
+			<result name="success">/Admin.jsp</result>
+			<result name="error">/adLogin.jsp</result>
+		</action>
+		<!-- 进入添加新课界面 -->
+		<action name = "gotoAddClass" class = "org.action.adLoginAction" method = "gotoAddClass">
+			<result name = "success">/Admin.jsp</result>
+			<result name = "error">/Admin.jsp</result>
+		</action>
+		<!-- 添加新课 -->
+		<action name = "addClass" class = "org.action.adLoginAction" method = "addClass">
+			<result type="redirectAction">showAllClass</result>			
+		</action>
+		<!-- 删除课程 -->
+		<action name = "deleteClass" class = "org.action.adLoginAction" method = "deleteClass">
+			<result type="redirectAction">showAllClass</result>			
+		</action>
+		<!-- 展示全部课程 -->
+		<action name = "showAllClass" class = "org.action.adLoginAction" method = "showAllClass">
+			<result name = "success">/Admin.jsp</result>
+			<result name = "error">/Admin.jsp</result>
+		</action>		
+		<!-- 进入添加开课界面 -->
+		<action name = "gotoAddOClass" class = "org.action.adLoginAction" method = "gotoAddOClass">
+			<result name = "success">/Admin.jsp</result>
+			<result name = "error">/Admin.jsp</result>
+		</action>
+		<!-- 开课 -->
+		<action name = "addOClass" class = "org.action.adLoginAction" method = "addOClass">
+			<result type="redirectAction">showAllOClass</result>			
+		</action>
+		<!-- 关课 -->
+		<action name = "deleteOClass" class = "org.action.adLoginAction" method = "deleteOClass">
+			<result type="redirectAction">showAllOClass</result>			
+		</action>
+		<!-- 展示全部开课课程 -->
+		<action name = "showAllOClass" class = "org.action.adLoginAction" method = "showAllOClass">
+			<result name = "success">/Admin.jsp</result>
+			<result name = "error">/adLogin.jsp</result>
+		</action>
+		<!-- 展示学生 -->
+		<action name = "showAllStudent" class = "org.action.adLoginAction" method = "showAllStudent">
+			<result name = "success">/Admin.jsp</result>
+			<result name = "error">/Admin.jsp</result>
+		</action>
+		<!-- 删除学生 -->
+		<action name = "deleteStudent" class = "org.action.adLoginAction" method = "deleteStudent">
+			<result type="redirectAction">showAllStudent</result>			
+		</action>
+		<!-- 展示老师 -->
+		<action name = "showAllTeacher" class = "org.action.adLoginAction" method = "showAllTeacher">
+			<result name = "success">/Admin.jsp</result>
+			<result name = "error">/Admin.jsp</result>
+		</action>
+		<!-- 删除老师 -->
+		<action name = "deleteTeacher" class = "org.action.adLoginAction" method = "deleteTeacher">
+			<result type="redirectAction">showAllTeacher</result>			
+		</action>
+
+	</package>
+	<constant name="struts.multipart.saveDir" value="/tmp"></constant>
+</struts>

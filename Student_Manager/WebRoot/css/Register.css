@@ -1,0 +1,65 @@
+a {
+	text-decoration: none !important;
+	color: #fff;
+}
+
+body {
+	font-size: 18px;
+}
+
+.register {
+	position: relative;
+	height: 620px;
+	background: #666;
+	border-radius: 8px;
+}
+
+.menu {
+	padding: 15px 40%;
+	border-bottom: solid 2px Silver;
+	margin-bottom: 15px;
+}
+
+.dark-matter label {
+	width: 100%;
+	padding: 15px 0 15px 20%;
+}
+
+.register-btn {
+	margin: 10px 0 0 25%;
+}
+
+.re-input {
+	width: 50%;
+}
+
+.re-sex-input {
+	width: 10%;
+}
+
+.select-input {
+	border-style: inset;
+	border: #999 2px solid;
+	height: 34px;
+}
+
+.main-footer {
+	border-top: solid 2px Silver;
+	text-align: center;
+	line-height: 2.5;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.stu_register {
+	float: left;
+	width: 60%;
+	height:400px;
+}
+
+.stu_register_img {
+	float:left;
+	width: 40%;
+	height:400px;
+}
