@@ -54,7 +54,7 @@ Tomcat版本：Tomcat8.x
 
  ## 2.[教师模块详情](https://github.com/1123GY/Student_Manager/blob/master/Teacher.md)
  
-教师注册+查看所教授课程+查看没课学生列表和成绩+给学生打分+修改自己信息
+教师注册+查看所教授课程+查看每科学生列表和成绩+给学生打分+修改自己信息
 
 ![](https://github.com/1123GY/Student_Manager/blob/master/Image/%E6%95%99%E5%B8%88%E7%95%8C%E9%9D%A2.jpg)
 
