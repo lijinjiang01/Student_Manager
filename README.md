@@ -36,30 +36,30 @@ Tomcat版本：Tomcat8.x
 
 5.运行，输入 http://localhost:8080/Student_Manager Tomcat配置其他端口，修改8080便可
 
- ![](https://github.com/1123GY/Student_Manager/blob/master/Image/首页.jpg)
+ ![](https://github.com/1123GY/Student_Manager/blob/master/Image/%E9%A6%96%E9%A1%B5.jpg)
  
- #数据库设计
+ # 数据库设计
 
  ## 1.数据库设计模型如下
 
- ![](https://github.com/1123GY/Student_Manager/blob/master/Student_Manager/sql/数据库设计模型.jpg)
+ ![](https://github.com/1123GY/Student_Manager/blob/master/Student_Manager/sql/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%9E%8B.jpg)
 
  # 模块介绍
  
- ## 1.学生模块
+ ## 1.[学生模块详情](https://github.com/1123GY/Student_Manager/blob/master/Student.md)
  
 学生注册+搜索课程+选修课程+退课+查看课表+查看成绩+修改个人信息
 
-![](https://github.com/1123GY/Student_Manager/blob/master/Image/学生首页.jpg)
+![](https://github.com/1123GY/Student_Manager/blob/master/Image/%E5%AD%A6%E7%94%9F%E9%A6%96%E9%A1%B5.jpg)
 
- ## 2.教师模块
+ ## 2.[教师模块详情](https://github.com/1123GY/Student_Manager/blob/master/Teacher.md)
  
 教师注册+查看所教授课程+查看没课学生列表和成绩+给学生打分+修改自己信息
 
-![](https://github.com/1123GY/Student_Manager/blob/master/Image/教师界面.jpg)
+![](https://github.com/1123GY/Student_Manager/blob/master/Image/%E6%95%99%E5%B8%88%E7%95%8C%E9%9D%A2.jpg)
 
- ## 3.管理员模块
+ ## 3.[管理员模块详情](https://github.com/1123GY/Student_Manager/blob/master/Manager.md)
  
 查看全部课程+添课+查看全部开课+开新课+查看全部学生信息+删除学生+查看全部教师信息+删除教师
 
-![](https://github.com/1123GY/Student_Manager/blob/master/Image/管理员页面.jpg)
+![](https://github.com/1123GY/Student_Manager/blob/master/Image/%E7%AE%A1%E7%90%86%E5%91%98%E9%A1%B5%E9%9D%A2.jpg)
